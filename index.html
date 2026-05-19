@@ -66,7 +66,7 @@
         function createHeart() {
             const heart = document.createElement('div');
             heart.classList.add('heart');
-            heart.innerHTML = '❤️';
+            heart.innerHTML = '💜';
             heart.style.left = Math.random() * 100 + 'vw';
             heart.style.animationDuration = Math.random() * 3 + 3 + 's';
             heart.style.opacity = Math.random() * 0.5 + 0.2;
@@ -79,7 +79,7 @@
             $('#myAudio')[0].play();
             $('#start-overlay').fadeOut(800, function() {
                 $('#main').fadeIn(1000);
-                setInterval(createHeart, 300);
+                setInterval(createHeart, 150);
                 runAsync().start();
             });
         });
